@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
-
+import { Provider } from 'react-redux';
+import { store } from './store/store';
 import App from './App';
-// action ={type:'',payload:''}
-// const reducer= (state,action)=>{
 
-// }
-// const store=createStore()
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}> <App /></Provider>
+   
   </React.StrictMode>,
   document.getElementById('root')
 );

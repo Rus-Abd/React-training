@@ -3,13 +3,21 @@ import Display from './Components/Display/Display';
 import './App.css';
 import Form from './Components/Form/Form';
 
-function App() {
+
+
+
+
+
+
+
+export default function App() {
+
   return (
     <div className="App">
-<Display />
-<Form />
+      <Display />
+      <Form />
     </div>
   );
 }
 
-export default App;
+
