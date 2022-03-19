@@ -1,0 +1,26 @@
+nav {
+  width: 158px;
+}
+.sidebar {
+  margin-top: 10px;
+  margin-left: 222.182px;
+}
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.sidebar-list__item button {
+  background-color: transparent;
+  border: none;
+  color: #777;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+.sidebar-list__item {
+  margin: 7px 0;
+}
+.sidebar-list__item button span {
+  margin-left: 5px;
+}
