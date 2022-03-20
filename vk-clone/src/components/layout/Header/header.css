@@ -10,7 +10,10 @@ header {
   padding-top: 10px;
   align-items: center;
 }
-.logo-text {
+.logo-icon:hover {
+  cursor: pointer;
+}
+.logo-icon {
   color: #fff;
 }
 .input-search {

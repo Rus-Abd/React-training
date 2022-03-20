@@ -17,9 +17,16 @@ nav {
   font-size: 13px;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 155px;
+  height: 30px;
+}
+.sidebar-list__item button:hover {
+  background-color: #333336;
 }
 .sidebar-list__item {
-  margin: 7px 0;
+  margin: 2px 0;
 }
 .sidebar-list__item button span {
   margin-left: 5px;
