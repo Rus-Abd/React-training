@@ -28,3 +28,13 @@ input:focus {
   color: #fff;
   cursor: pointer;
 }
+@media only screen and (max-width: 650px) {
+  input {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  input {
+    width: 200px;
+  }
+}
