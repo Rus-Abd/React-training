@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import SearchBar from '../../Components/SearchBar/SearchBar';
-import youtube from './api/';
-import CardList from './Components/CardList/CardList';
+import SearchBar from './components/SearchBar/SearchBar';
+import youtube from './api/youtube';
+import CardList from './components/CardList/CardList';
 import { searchBarProps } from './types/types';
-import './home.css';
+import './App.css';
 
-export default class Home extends Component<searchBarProps> {
+export default class App extends Component<searchBarProps> {
   static defaultProps = { onFormSubmit: {} };
   state = { videos: [], selectedVideo: null };
   handleSubmit = async (searchTerm: string) => {

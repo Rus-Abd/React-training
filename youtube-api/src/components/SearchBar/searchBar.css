@@ -1,0 +1,30 @@
+form {
+  margin-top: 10px;
+  display: flex;
+  margin-bottom: 30px;
+}
+input {
+  background-color: #121212;
+  font-size: 16px;
+  border: none;
+  width: 560px;
+  height: 40px;
+  padding: 7px;
+
+  outline: none;
+  color: #fff;
+}
+input:focus {
+  border: 1px solid #1c5192;
+}
+.search-button {
+  width: 60px;
+  height: 40px;
+  background-color: #2e2e2e;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}

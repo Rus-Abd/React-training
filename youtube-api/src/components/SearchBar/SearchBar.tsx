@@ -9,9 +9,7 @@ export default class SearchBar extends Component<searchBarProps> {
       this.props.onFormSubmit(localStorage.getItem('searchValue') as string);
     }
   }
-  componentWillUnmount() {
-    localStorage.setItem('searchValue', this.state.searchTerm);
-  }
+
   state = {
     searchTerm: '',
   };
@@ -22,7 +20,7 @@ export default class SearchBar extends Component<searchBarProps> {
   handleSubmit = (event: MouseEvent | FormEvent) => {
     const { searchTerm } = this.state;
     this.props.onFormSubmit(this.state.searchTerm);
-    console.log(searchTerm);
+    localStorage.setItem('searchValue', this.state.searchTerm);
     event.preventDefault();
   };
   render() {
