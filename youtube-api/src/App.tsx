@@ -13,7 +13,7 @@ export default class App extends Component<searchBarProps> {
       params: {
         part: 'snippet',
         maxResults: 6,
-        key: 'AIzaSyCZrjrobr9h2seY8rTgeDFOrZMPW7XoPg4',
+        key: process.env.REACT_APP_YOUTUBE_KEY,
         q: searchTerm,
         type: 'video',
       },
